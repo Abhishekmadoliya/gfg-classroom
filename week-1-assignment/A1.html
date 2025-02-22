@@ -1,13 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav {
+            background: #f1f1ef;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            
+            border-bottom: 2px solid black;
+
+        }
+
+        .nav-right ul {
+            display: flex;
+            column-gap: 5px;
+            list-style: none;
+            color: rgb(17, 17, 17);
+        }
+
+        nav img {
+            width: 100px;
+            object-fit: cover;
+        }
+
+
+        #hero {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color:beige;
+
+        }
+
+        .boxes {
+            width: 300px;
+            height: 300px;
+            padding: 5px;
+            color: rgb(10, 10, 9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+        }
+
+        .boxes img {
+            
+            width: 70%;
+            height: 50%;
+            object-fit: contain;
+           
+        }
+
+        .boxes button{
+            width: 100px;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: blueviolet;
+            border: none;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        footer{
+            height: 200px;
+            background: #000;
+            color: #f1f1ef;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .items-left ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            column-gap: 10px;
+        }
+
+        .items-right img{
+            width: 200px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- ecommerce landing page -->
 
-    
+    <div class="page">
+
+        <header>
+            <nav>
+
+
+                <div class="nav-left">
+                    <img src="./logo.png" alt="">
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li>Home</li>
+                        <li>contact us</li>
+                        <li>services</li>
+                        <li>more</li>
+                    </ul>
+            </nav>
+    </div>
+
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="boxes">
+                <img src="./pr.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores eligendi fuga earum voluptates
+                    assumenda ipsam atque magni repudiandae! Vitae repudiandae placeat mollitia sit asperiores quidem
+                    ipsum sunt, aut quisquam culpa.boxes</p>
+                    <button>Buy</button>
+            </div>
+            <div class="boxes">
+                <img src="./pr.jpg" alt="">
+                <p>boxes Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi saepe fugiat, nobis ab aliquid
+                    perferendis excepturi itaque nulla, mollitia, magni quasi repellat nam pariatur! Nihil amet aperiam
+                    tempora tempore atque?</p>
+                    <button>Buy</button>
+            </div>
+            <div class="boxes">
+                <img src="./pr.jpg" alt="">
+                <p>boxes Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt deleniti inventore mollitia
+                    quos. Est ratione pariatur dolorem numquam cupiditate deleniti quisquam eaque earum quod,
+                    voluptatem, totam adipisci. Reprehenderit, deserunt nisi?</p>
+                    <button>Buy</button>
+            </div>
+            <div class="boxes">
+                <img src="./pr.jpg" alt="">
+                <p>boxes Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod molestiae odit.
+                    Aliquid, quos, quae nobis itaque ipsam excepturi dolorem hic asperiores esse maxime assumenda modi
+                    fugit qui aperiam in.</p>
+                    <button>Buy</button>
+            </div>
+            <div class="boxes">
+                <img src="./pr.jpg" alt="">
+                <p>boxes Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequatur, hic optio delectus
+                    quos facere iusto incidunt quidem ad qui minus impedit ab odit culpa esse adipisci necessitatibus
+                    saepe? Perferendis!</p>
+                    <button>Buy</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="items-left">
+            <ul>
+                <li>contact us</li>
+                <li>Feedback</li>
+                <li>more about us</li>
+                <li> abhishekmadoliya@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="items-right">
+            <img src="logo.png" alt="">
+            
+        </div>
+
+
+    </footer>
+    </div>
+
 </body>
+
 </html>
