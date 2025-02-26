@@ -6,13 +6,36 @@
 
 /* general siblings -- ->  ~    */
 
-h1 ~P{
+/* h1 ~P{
     background: #000;
     color: aliceblue;
-}
+} */
 
 
 /* adjacent ---> + */
 
+/* h1 +P{
+    background: #000;
+    color: aliceblue;
+} */
 
+
+/* psedo class */
+
+
+div{
+    background-color: aquamarine;
+    border: 2px solid;
+}
+
+div:hover{
+    background: #000;
+    color: aliceblue;
+}
+
+.one:last-child{
+    background-color: blue;
+}
+
+/* position in css */
 
