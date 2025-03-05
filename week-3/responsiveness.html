@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+   
     <style>
-        .parent {
-            display: grid;
+      .parent {
+        /* display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 1rem;
-            border: 1px solid black;
-            /* grid-template-rows: 1fr 1fr; */
-            /* flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh; */
+            border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .child {
+        padding: 1rem;
+        /* width: 100px;
+            height: 100px; */
+        background-color: red;
+      }
+
+      @media (max-width: 720px) {
+        .parent {
+          flex-direction: column;
         }
 
-         .child {
-            padding: 1rem;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-
-         }
-        
-
-        
+        .child {
+          background-color: yellow;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="parent">
-        <div class="child child1">1</div>
-        <div class="child child2">2</div>
-        <div class="child child3">3</div>
-        <div class="child child4">4</div>
-        <div class="child child5">5</div>
-        <div class="child child6">6</div>
+      <div class="child child1">1</div>
+      <div class="child child2">2</div>
+      <div class="child child3">3</div>
+      <div class="child child4">4</div>
+      <div class="child child5">5</div>
+      <div class="child child6">6</div>
     </div>
-</body>
+
+    
+  </body>
 </html>
