@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        .parent {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+
+        }
+        .child {
+            padding: 1rem;
+            background-color: red;
+            flex: 1 1 0;  /* flex-grow, flex-shrink, flex-basis */
+            color: white;
+            font-size: large;
+        }
+
+        @media (max-width: 720px) {
+           .child {
+               flex: 1 1 calc(50% - 1rem);
+           }
+
+        
+        }
+
+
+        @media (max-width: 480px) {
+            .child {
+                flex: 1 1 calc(100% - 1rem);
+
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div  class="parent">
+        <div class="child">howe</div>
+        <div class="child">about</div>
+        <div class="child">contact</div>
+        <div class="child">signup</div>
+        <div class="child">login</div>
+    </div>
+</body>
+</html>
