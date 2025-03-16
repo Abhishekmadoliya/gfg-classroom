@@ -85,5 +85,5 @@ if (canVote) {
 //     console.log("Scalene");
 // }
 
-
+//hoisting and execution context are done 9n class 
 
