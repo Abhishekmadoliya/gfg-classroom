@@ -91,7 +91,8 @@
 
 // check palindrome
 
-// let str = 'abcd'
+// l
+//  et str = 'abcd'
 
 // let newstr = str.split('').reverse().join('');
 // const result = str===newstr?"string is palindrome":"not palindrome"
