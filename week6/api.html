@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API FETCHING</title>
+    
+    <style>
+      .parent{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .card{
+        max-width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        flex-wrap: wrap;
+        padding: 2rem;
+        border: 2px solid black;
+      }
+      .profile{
+        text-align: center;
+        align-content: center;
+        height: 50px;
+        width: 50px;
+        padding: 3px;
+        border: 2px solid;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      Fetch data from api and show in cadtd
+    </div>
+    <div id="container" class="parent"></div>
+
+    
+    <script>
+      // let d
+      async function getusers() {
+        const apiData = await fetch(
+          "https://jsonplaceholder.typicode.com/users"
+        );
+        const response = await apiData.json();
+
+        console.log(response);
+        // return response
+        let container = document.getElementById("container");
+
+        response.forEach((response) => {
+          let card = document.createElement("div");
+          card.classList.add("card");
+
+          // Extract First Letter for Profile Icon
+          let firstLetter = response.name.charAt(0).toUpperCase();
+
+          card.innerHTML = `
+              <div class="profile">${firstLetter}</div>
+             
+              <div class="email">📧 ${response.email}</div>
+              <div class="address"> city:${response.address.city} <br> zip code: ${response.address.zipcode}</div>
+              
+            `;
+
+          container.appendChild(card);
+        });
+      }
+
+      getusers();
+    </script>
+  </body>
+</html>
