@@ -1,0 +1,1 @@
+A RESTful API is an application programming interface (API) that follows the principles of Representational State Transfer (REST), using standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources identified by URLs, making it a common and flexible way to build web services
